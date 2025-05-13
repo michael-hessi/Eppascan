@@ -69,14 +69,15 @@ The installer will:
 
 Before installation, you may edit variables in `eppascan.sh` as needed:
 
-| Variable          | Description                      | Example Value             |
-|-------------------|----------------------------------|---------------------------|
-| `NETWORK_INTERFACE` | Network interface               | `eth0`                    |
-| `MULTICAST_ADDR`    | Multicast address               | `239.255.255.253`         |
-| `SCAN_OUTPUT_DIR`   | Output directory                | `/opt/paperless/consume`  |
-| `SCAN_RESOLUTION`   | Scan resolution (dpi)           | `300`                     |
-| `SCAN_MODE`         | Scan mode (Color, Gray, Lineart)| `Gray`                    |
-| `SCAN_FORMAT`       | Output file format              | `jpeg`                    |
+| Variable           | Description                 | Example Value           |
+|--------------------|----------------------------|------------------------|
+| `NETWORK_INTERFACE`| Network interface          | `eth0`                 |
+| `MULTICAST_ADDR`   | Multicast address          | `239.255.255.253`      |
+| `SCAN_OUTPUT_DIR`  | Output directory           | `/opt/paperless/consume`|
+| `SCAN_RESOLUTION`  | Scan resolution (dpi)      | `300`                  |
+| `SCAN_MODE`        | Scan mode (Color, Gray, Lineart) | `Gray`           |
+| `SCAN_FORMAT`      | Output file format         | `jpeg`                 |
+
 
 > 💡 For best OCR results, use at least 300 dpi and grayscale mode.
 
