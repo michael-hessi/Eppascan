@@ -50,12 +50,12 @@ Automated Integration of Epson Network Scanners with Paperless-NGX
 
 Clone the repository and run the installer:
 
+```bash
 git clone https://github.com/michael-hessi/Eppascan.git
 cd Eppascan
 chmod +x eppascan_install.sh
 sudo ./eppascan_install.sh
-
-
+```
 
 The installer will:  
 - Install required packages (`tcpdump`, `sane-utils`)  
@@ -70,15 +70,15 @@ The installer will:
 Before installation, you may edit variables in `eppascan.sh` as needed:
 
 | Variable          | Description                      | Example Value             |
-|-------------------|---------------------------------|---------------------------|
-| NETWORK_INTERFACE  | Network interface                | eth0                      |
-| MULTICAST_ADDR    | Multicast address                | 239.255.255.253           |
-| SCAN_OUTPUT_DIR   | Output directory                 | /opt/paperless/consume    |
-| SCAN_RESOLUTION   | Scan resolution (dpi)            | 300                       |
-| SCAN_MODE         | Scan mode (Color, Gray, Lineart) | Grey                      |
-| SCAN_FORMAT       | Output file format               | jpeg                      |
+|-------------------|----------------------------------|---------------------------|
+| `NETWORK_INTERFACE` | Network interface               | `eth0`                    |
+| `MULTICAST_ADDR`    | Multicast address               | `239.255.255.253`         |
+| `SCAN_OUTPUT_DIR`   | Output directory                | `/opt/paperless/consume`  |
+| `SCAN_RESOLUTION`   | Scan resolution (dpi)           | `300`                     |
+| `SCAN_MODE`         | Scan mode (Color, Gray, Lineart)| `Gray`                    |
+| `SCAN_FORMAT`       | Output file format              | `jpeg`                    |
 
-For best OCR results, use at least 300 dpi and grayscale mode.
+> 💡 For best OCR results, use at least 300 dpi and grayscale mode.
 
 ---
 
@@ -95,32 +95,32 @@ For best OCR results, use at least 300 dpi and grayscale mode.
 ## Troubleshooting
 
 - **Check logs:**  
-
-sudo tail -n 50 /var/log/eppascan_scanimage_errors.log
-
+  ```bash
+  sudo tail -n 50 /var/log/eppascan_scanimage_errors.log
+  ```
 
 - **Verify multicast traffic:**  
-
-sudo tcpdump -i eth0 igmp
-
+  ```bash
+  sudo tcpdump -i eth0 igmp
+  ```
 
 - **Check firewall/network:**  
-Ensure UDP ports 3289, 3702 and TCP ports 1865, 445 are open.  
+  Ensure UDP ports `3289`, `3702` and TCP ports `1865`, `445` are open.
+
 - **Test SANE backend:**  
-
-scanimage -L
-
+  ```bash
+  scanimage -L
+  ```
 
 - **Check directory permissions:**  
-
-sudo chown -R paperless:paperless /opt/paperless/consume
-
+  ```bash
+  sudo chown -R paperless:paperless /opt/paperless/consume
+  ```
 
 - **Check Paperless logs:**  
-
-sudo journalctl -u paperless-consumer -f
-
-
+  ```bash
+  sudo journalctl -u paperless-consumer -f
+  ```
 
 If you encounter problems, please open an [issue](https://github.com/michael-hessi/Eppascan/issues) or contact support.
 
@@ -130,9 +130,9 @@ If you encounter problems, please open an [issue](https://github.com/michael-hes
 
 Run the installer script again and select the uninstall option:
 
+```bash
 sudo ./eppascan_install.sh
-
-
+```
 
 ---
 
