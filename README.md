@@ -54,7 +54,7 @@ Clone the repository and run the installer:
 git clone https://github.com/michael-hessi/Eppascan.git
 cd Eppascan
 chmod +x eppascan_install.sh
-sudo ./eppascan_install.sh
+./eppascan_install.sh
 ```
 
 The installer will:  
@@ -96,12 +96,12 @@ Before installation, you may edit variables in `eppascan.sh` as needed:
 
 - **Check logs:**  
   ```bash
-  sudo tail -n 50 /var/log/eppascan_scanimage_errors.log
+  tail -n 50 /var/log/eppascan_scanimage_errors.log
   ```
 
 - **Verify multicast traffic:**  
   ```bash
-  sudo tcpdump -i eth0 igmp
+  tcpdump -i eth0 igmp
   ```
 
 - **Check firewall/network:**  
@@ -114,12 +114,12 @@ Before installation, you may edit variables in `eppascan.sh` as needed:
 
 - **Check directory permissions:**  
   ```bash
-  sudo chown -R paperless:paperless /opt/paperless/consume
+  chown -R paperless:paperless /opt/paperless/consume
   ```
 
 - **Check Paperless logs:**  
   ```bash
-  sudo journalctl -u paperless-consumer -f
+  journalctl -u paperless-consumer -f
   ```
 
 If you encounter problems, please open an [issue](https://github.com/michael-hessi/Eppascan/issues) or contact support.
@@ -131,7 +131,7 @@ If you encounter problems, please open an [issue](https://github.com/michael-hes
 Run the installer script again and select the uninstall option:
 
 ```bash
-sudo ./eppascan_install.sh
+./eppascan_install.sh
 ```
 
 ---
