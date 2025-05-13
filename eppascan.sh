@@ -2,12 +2,12 @@
 
 # Eppascan – Epson Scanner Integration for Paperless-NGX, v0.1
 #
-# A service for a headless Paperless-NGX server that waits for the scan 
-# button on any networked Epson scanner to be pressed, to then 
-# automatically start a scan process and transfer the documents to the 
+# A service for a headless Paperless-NGX server that waits for the scan
+# button on any networked Epson scanner to be pressed, to then
+# automatically start a scan process and transfer the documents to the
 # Paperless consume directory.
 #
-# Listens for Epson scanner broadcast and automatically scans all pages 
+# Listens for Epson scanner broadcast and automatically scans all pages
 # to /opt/paperless/consume
 #
 # Copyright (C) 2025 Michael Hessburg, www.hessburg.de
