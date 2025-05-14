@@ -1,3 +1,6 @@
+![Projektlogo](./eppascan.png)
+
+
 # Eppascan
 Automated Integration of Epson Network Scanners with Paperless-NGX
 
