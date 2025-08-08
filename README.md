@@ -26,6 +26,8 @@ Automated Integration of Epson Network Scanners with Paperless-NGX
 
 **Eppascan** is an open-source solution for seamless integration of Epson network scanners (tested with ES-500WII) with [Paperless-NGX](https://github.com/paperless-ngx/paperless-ngx). It consists of a daemon script for automated scanning and an installation script for easy setup as a systemd service. Once installed, scan operations triggered on the scanner are automatically detected and scanned documents are saved directly into the Paperless-NGX consume directory.
 
+**Version:** v0.2 (2025-08-08)
+
 ---
 
 ## Features
