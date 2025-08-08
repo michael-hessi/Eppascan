@@ -30,7 +30,7 @@ Once installed, scan operations triggered on the scanner are automatically detec
 
 ---
 
-**Version:** v0.2 (2025-08-08)
+**Version:** v0.3 (2025-08-08)
 
 ---
 
