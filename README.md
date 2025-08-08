@@ -42,8 +42,21 @@ Once installed, scan operations triggered on the scanner are automatically detec
 - Secure cleanup of temporary files with cleanup mechanism via trap  
 - Removal of the no longer needed `MULTICAST_ADDR` variable  
 - More stable scanner IP detection and more robust overall structure of the script  
-- Adjustment of the scan command and the output path structure  
+- Adjustment of the scan command and the output path structure
 
+---
+
+## Changelog / Changes in version v0.3
+
+- Automatic detection of active network interface instead of fixed setting  
+- Network interface detection logged once at script start  
+- All status and error messages consistently logged with timestamps  
+- Avoid repeated interface detection in main loop for better performance  
+- Clean handling of temp files and signal traps improved  
+- Fixed missing/unclear network interface logging issue  
+- Confirmed scan process uses detected interface persistently  
+- Maintained all existing features: Epson scan listening, auto scan, save to Paperless consume directory  
+- Comments fully in English for better maintainability
 ---
 
 ## Features
